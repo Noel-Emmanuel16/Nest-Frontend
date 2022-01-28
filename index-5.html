@@ -20,6 +20,19 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
     <link rel="stylesheet" href="assets/css/main.css?v=3.2" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            
+          }
+        }
+      }
+    }
+    </script>
+
   </head>
 
   <body>
@@ -489,149 +502,107 @@
               /></a>
             </div>
             <div class="header-nav d-none d-lg-flex">
-              <div class="main-categori-wrap d-none d-lg-block">
-                <a class="categories-button-active" href="#">
-                  <span class="fi-rs-apps"></span>
-                  <span class="et">All</span>
-                  <i class="fi-rs-angle-down"></i>
-                </a>
-                <div
-                  class="
-                    categories-dropdown-wrap categories-dropdown-active-large
-                    font-heading
-                  "
-                >
-                  <div class="d-flex categori-dropdown-inner">
-                    <ul>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-1.svg"
-                            alt=""
-                          />Milks and Dairies</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-2.svg"
-                            alt=""
-                          />Clothing & beauty</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-3.svg"
-                            alt=""
-                          />Pet Foods & Toy</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-4.svg"
-                            alt=""
-                          />Baking material</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-5.svg"
-                            alt=""
-                          />Fresh Fruit</a
-                        >
-                      </li>
-                    </ul>
-                    <ul class="end">
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-6.svg"
-                            alt=""
-                          />Wines & Drinks</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-7.svg"
-                            alt=""
-                          />Fresh Seafood</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-8.svg"
-                            alt=""
-                          />Fast food</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-9.svg"
-                            alt=""
-                          />Vegetables</a
-                        >
-                      </li>
-                      <li>
-                        <a href="shop-grid-right.html">
-                          <img
-                            src="assets/imgs/theme/icons/category-10.svg"
-                            alt=""
-                          />Bread and Juice</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="more_slide_open" style="display: none">
-                    <div class="d-flex categori-dropdown-inner">
-                      <ul>
-                        <li>
-                          <a href="shop-grid-right.html">
-                            <img
-                              src="assets/imgs/theme/icons/icon-1.svg"
-                              alt=""
-                            />Milks and Dairies</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop-grid-right.html">
-                            <img
-                              src="assets/imgs/theme/icons/icon-2.svg"
-                              alt=""
-                            />Clothing & beauty</a
-                          >
-                        </li>
-                      </ul>
-                      <ul class="end">
-                        <li>
-                          <a href="shop-grid-right.html">
-                            <img
-                              src="assets/imgs/theme/icons/icon-3.svg"
-                              alt=""
-                            />Wines & Drinks</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop-grid-right.html">
-                            <img
-                              src="assets/imgs/theme/icons/icon-4.svg"
-                              alt=""
-                            />Fresh Seafood</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="more_categories">
-                    <span class="icon"></span>
-                    <span class="heading-sm-1">Show more...</span>
-                  </div>
+              <nav class="relative px-4 py-4 flex justify-between items-center">
+     
+                <div class="">
+                  <button class="navbar-burger flex items-center text-white p-3">
+                    <svg
+                      class="block h-7 w-7 fill-current"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Mobile menu</title>
+                      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                  </button>
                 </div>
+          
+              </nav>
+              <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav
+                  class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+                >
+                  <div class="flex items-center mb-8">
+                    <div class="logo logo-width-1 d-block">
+                      <a href="index.html"
+                        ><img src="assets/imgs/theme/logo.svg" alt="logo"
+                      /></a>
+                    </div>
+                    <button class="navbar-close">
+                      <svg
+                        class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div>
+                    <ul>
+                      <li class="mb-1">
+                        <a
+                          class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                          href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="mb-1">
+                        <a
+                          class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                          href="#"
+                          >About Us</a
+                        >
+                      </li>
+                      <li class="mb-1">
+                        <a
+                          class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                          href="#"
+                          >Services</a
+                        >
+                      </li>
+                      <li class="mb-1">
+                        <a
+                          class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                          href="#"
+                          >Pricing</a
+                        >
+                      </li>
+                      <li class="mb-1">
+                        <a
+                          class="block p-4 text-sm font-semibold text-gray-400 hover:bg-green-50 hover:text-green-600 rounded"
+                          href="#"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mt-auto">
+                    <div class="pt-6">
+                      <a
+                        class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
+                        href="#"
+                        >Sign in</a
+                      >
+                      <a
+                        class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 bg-green-700 rounded-xl"
+                        href="#"
+                        >Sign Up</a
+                      >
+                    </div>
+                    <p class="my-4 text-xs text-center text-gray-400">
+                      <span>Copyright © 2021</span>
+                    </p>
+                  </div>
+                </nav>
               </div>
               <div
                 class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading"
@@ -639,10 +610,7 @@
                 <nav>
                   <ul>
                     <li class="hot-deals">
-                      <img
-                        src="assets/imgs/theme/icons/icon-hot-white.svg"
-                        alt="hot deals"
-                      /><a href="shop-grid-right.html">Hot Deals</a>
+                    <a href="shop-grid-right.html">Hot Deals</a>
                     </li>
                     <li>
                       <a class="active" href="index.html"
@@ -1312,40 +1280,70 @@
     <!--End header-->
     <main class="main">
       <section class="home-slider position-relative">
-        <div class="" style="width: 100% !important;">
-            <div class="home-slide-cover">
-                <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
-                    <div class="single-hero-slider single-animation-wrap" style="background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://media.istockphoto.com/photos/smiling-young-guy-wearing-yellow-hoodie-and-showing-thumbs-up-picture-id1290654525?b=1&k=20&m=1290654525&s=170667a&w=0&h=NOB4tdVJHYVuzlAjSxgcZchyqlJDNpwbnQTg8rse38s=) center center/cover no-repeat; border-radius: 0 !important;">
-                        <div class="slider-content mt-10">
-                            <h1 class="display-2 mb-40" style="color: #fefefe !important;">
-                                Don’t miss amazing<br />
-                                Fashion wears
-                            </h1>
-                            <p class="mb-65" style="color: #fefefe !important;">Sign up for the daily newsletter</p>
-                            <form class="form-subcriber d-flex">
-                                <input type="email" placeholder="Your emaill address" />
-                                <button class="btn" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="single-hero-slider single-animation-wrap"style="background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://media.istockphoto.com/photos/vegetables-and-fruit-with-heart-shape-as-concept-of-cardiovascular-picture-id1285827086?b=1&k=20&m=1285827086&s=170667a&w=0&h=e4riSWiqdS_Kz6ahp_QNF02N1sKD0FN6lFsNJzb98C8=) center center/cover no-repeat;  border-radius: 0 !important;">
-                        <div class="slider-content mt-10">
-                            <h1 class="display-2 mb-40" style="color: #fefefe !important;">
-                                Fresh Vegetables<br />
-                                Big discount
-                            </h1>
-                            <p class="mb-65" style="color: #fefefe !important;">Save up to 50% off on your first order</p>
-                            <form class="form-subcriber d-flex">
-                                <input type="email" placeholder="Your emaill address" />
-                                <button class="btn" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
+        <div class="" style="width: 100% !important">
+          <div class="home-slide-cover">
+            <div
+              class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1"
+            >
+              <div
+                class="single-hero-slider single-animation-wrap"
+                style="
+                  background: linear-gradient(
+                      rgba(0, 0, 0, 0.3),
+                      rgba(0, 0, 0, 0.3)
+                    ),
+                    url(https://media.istockphoto.com/photos/smiling-young-guy-wearing-yellow-hoodie-and-showing-thumbs-up-picture-id1290654525?b=1&k=20&m=1290654525&s=170667a&w=0&h=NOB4tdVJHYVuzlAjSxgcZchyqlJDNpwbnQTg8rse38s=)
+                      center center/cover no-repeat;
+                  border-radius: 0 !important;
+                  height: 400px !important;
+                "
+              >
+                <div class="slider-content mt-10">
+                  <h1 class="display-2 mb-40" style="color: #fefefe !important">
+                    Don’t miss amazing<br />
+                    Fashion wears
+                  </h1>
+                  <p class="mb-65" style="color: #fefefe !important">
+                    Sign up for the daily newsletter
+                  </p>
+                  <form class="form-subcriber d-flex">
+                    <input type="email" placeholder="Your emaill address" />
+                    <button class="btn" type="submit">Subscribe</button>
+                  </form>
                 </div>
-                <div class="slider-arrow hero-slider-1-arrow"></div>
+              </div>
+              <div
+                class="single-hero-slider single-animation-wrap"
+                style="
+                  background: linear-gradient(
+                      rgba(0, 0, 0, 0.3),
+                      rgba(0, 0, 0, 0.3)
+                    ),
+                    url(https://media.istockphoto.com/photos/vegetables-and-fruit-with-heart-shape-as-concept-of-cardiovascular-picture-id1285827086?b=1&k=20&m=1285827086&s=170667a&w=0&h=e4riSWiqdS_Kz6ahp_QNF02N1sKD0FN6lFsNJzb98C8=)
+                      center center/cover no-repeat;
+                  border-radius: 0 !important;
+                  height: 400px !important;
+                "
+              >
+                <div class="slider-content mt-10">
+                  <h1 class="display-2 mb-40" style="color: #fefefe !important">
+                    Fresh Vegetables<br />
+                    Big discount
+                  </h1>
+                  <p class="mb-20" style="color: #fefefe !important">
+                    Save up to 50% off on your first order
+                  </p>
+                  <form class="form-subcriber d-flex">
+                    <input type="email" placeholder="Your emaill address" />
+                    <button class="btn" type="submit">Subscribe</button>
+                  </form>
+                </div>
+              </div>
             </div>
+            <div class="slider-arrow hero-slider-1-arrow"></div>
+          </div>
         </div>
-    </section>
+      </section>
       <!--End hero slider-->
       <section class="featured section-padding">
         <div class="container">
@@ -4997,7 +4995,7 @@
                         <a href="shop-grid-right.html">Snack</a>
                       </div>
                       <h2>
-                        <a href="shop-product-right.html" 
+                        <a href="shop-product-right.html"
                           >Seeds of Change Organic Quinoa, Brown, & Red Rice</a
                         >
                       </h2>
@@ -9573,4 +9571,46 @@
     <script src="assets/js/main.js?v=3.2"></script>
     <script src="assets/js/shop.js?v=3.2"></script>
   </body>
+  <script>
+    // Burger menus
+    document.addEventListener("DOMContentLoaded", function () {
+      // open
+      const burger = document.querySelectorAll(".navbar-burger");
+      const menu = document.querySelectorAll(".navbar-menu");
+
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      // close
+      const close = document.querySelectorAll(".navbar-close");
+      const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener("click", function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle("hidden");
+            }
+          });
+        }
+      }
+    });
+  </script>
 </html>

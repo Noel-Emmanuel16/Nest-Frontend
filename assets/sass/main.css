@@ -1859,7 +1859,6 @@ label {
 }
 
 .hero-slider-1 .single-hero-slider {
-  height: 100%;
   background-size: cover;
   background-position: center center;
 }
@@ -7911,8 +7910,8 @@ span.fi-rs-apps {
   background-color: #ffffff;
   min-width: 250px;
   padding: 25px 15px;
-  -webkit-transition: all .25s ease 0s;
-  transition: all .25s ease 0s;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   opacity: 0;
   visibility: hidden;
   margin-top: 20px;
@@ -7941,8 +7940,8 @@ span.fi-rs-apps {
   background-color: #ffffff;
   width: 240px;
   padding: 33px 0 35px;
-  -webkit-transition: all .25s ease 0s;
-  transition: all .25s ease 0s;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   opacity: 0;
   visibility: hidden;
   border-radius: 10px;
@@ -7980,8 +7979,8 @@ span.fi-rs-apps {
   background-color: #ffffff;
   width: 100%;
   padding: 35px 25px 35px 35px;
-  -webkit-transition: all .25s ease 0s;
-  transition: all .25s ease 0s;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   opacity: 0;
   visibility: hidden;
   margin-top: 20px;
@@ -8398,7 +8397,7 @@ span.fi-rs-apps {
 
 .categories-dropdown-wrap ul li.has-children > a::after {
   content: "\f111";
-  font-family: 'uicons-regular-straight' !important;
+  font-family: "uicons-regular-straight" !important;
   position: absolute;
   right: 30px;
   top: 50%;
@@ -8496,7 +8495,7 @@ span.fi-rs-apps {
   content: "";
   width: 12px;
   height: 2px;
-  background-color: #3BB77E;
+  background-color: #3bb77e;
   position: absolute;
   right: 4px;
   top: 9px;
@@ -8506,7 +8505,7 @@ span.fi-rs-apps {
   content: "";
   width: 2px;
   height: 12px;
-  background-color: #3BB77E;
+  background-color: #3bb77e;
   position: absolute;
   right: 9px;
   top: 4px;
