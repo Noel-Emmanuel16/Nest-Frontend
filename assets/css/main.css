@@ -912,7 +912,7 @@ strong,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: end;
-  margin-bottom: 44px;
+  margin-bottom: 20px;
   position: relative;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -2719,17 +2719,14 @@ label {
 /*COMPONENTS -> TABS*/
 .nav-tabs {
   border: 0;
-  margin-bottom: 4px;
 }
 
 .nav-tabs .nav-link {
   background-color: #eeeeee;
   font-size: 15px;
-  margin: 0 10px;
   margin-left: 10px;
   color: #444;
   border-radius: 4px;
-  padding: 15px 24px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border: 0;
@@ -2762,7 +2759,6 @@ label {
 }
 
 .nav-tabs.links .nav-link {
-  padding: 0 10px;
   background: none;
   font-size: 16px;
   color: #253d4e;
@@ -8693,7 +8689,7 @@ span.fi-rs-apps {
 }
 
 .main-menu.main-menu-lh-2 > nav > ul > li {
-  line-height: 70px;
+  line-height: 10px;
 }
 
 .main-menu.main-menu-lh-3 > nav > ul > li {
@@ -12357,9 +12353,9 @@ footer .hotline img {
   .section-title .show-all {
     display: none;
   }
-  .nav-tabs.links .nav-link {
+  /* .nav-tabs.links .nav-link {
     margin-bottom: 10px;
-  }
+  } */
   .slider-arrow.slider-arrow-2.flex-right {
     display: none;
   }
@@ -12482,12 +12478,70 @@ footer .hotline img {
 }
 /*# sourceMappingURL=main.css.map */
 
-.collapse.show{
-  background-color: #000;
+
+
+/* Advanced dropdown menu CSS */
+nav .wrapper{
+  position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
+  display: flex;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: none;
+  transition: all 0.3s ease;
+}
+nav .wrapper.show{
+  display: block;
+  display: flex;
+}
+.wrapper ul{
+  width: 350px;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+.wrapper ul li{
+  line-height: 55px;
+}
+.wrapper ul li a{
+  font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
+ul li a .icon{
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #ffffff1a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li a .icon span{
+  line-height: 40px;
+  font-size: 20px;
+}
+ul li a i{
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+.wrapper ul.setting-drop,
+.wrapper ul.help-drop{
+  display: none;
+  position: absolute;
+  top: 70px;
+  z-index: 999;
+}
+.wrapper .arrow{
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wrapper .arrow span{
+  margin-right: 15px;
+}
