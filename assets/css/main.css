@@ -8375,7 +8375,7 @@ span.fi-rs-apps {
 .main-menu > nav > ul > li > a i {
   font-size: 8px;
   position: relative;
-  margin-left: 4px;
+  margin-left: 10px;
 }
 
 .main-menu > nav > ul > li > a.active {
@@ -8875,7 +8875,7 @@ span.fi-rs-apps {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   opacity: 0;
   visibility: hidden;
-  box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, .7) !important;
+  box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.7) !important;
 }
 
 .categories-dropdown-active-large.open {
@@ -8883,7 +8883,7 @@ span.fi-rs-apps {
   visibility: visible;
 }
 
-.categories-dropdown-active-large.close{
+.categories-dropdown-active-large.close {
   opacity: 0;
   display: none;
 }
@@ -9617,7 +9617,8 @@ footer .hotline img {
   max-width: 40%;
 }
 
-.newsletter .newsletter-inner .newsletter-content p {
+.newsletter .newsletter-inner .newsletter-content p, .newsletter .newsletter-inner .newsletter-content h2 {
+  color: #fff;
   font-size: 18px;
 }
 
@@ -12478,10 +12479,8 @@ footer .hotline img {
 }
 /*# sourceMappingURL=main.css.map */
 
-
-
 /* Advanced dropdown menu CSS */
-nav .wrapper{
+nav .wrapper {
   position: absolute;
   top: 0;
   display: flex;
@@ -12491,25 +12490,25 @@ nav .wrapper{
   display: none;
   transition: all 0.3s ease;
 }
-nav .wrapper.show{
+nav .wrapper.show {
   display: block;
   display: flex;
 }
-.wrapper ul{
+.wrapper ul {
   width: 350px;
   list-style: none;
   transition: all 0.3s ease;
 }
-.wrapper ul li{
+.wrapper ul li {
   line-height: 55px;
 }
-.wrapper ul li a{
+.wrapper ul li a {
   font-weight: 500;
   display: flex;
   align-items: center;
 }
 
-ul li a .icon{
+ul li a .icon {
   height: 40px;
   width: 40px;
   margin-right: 13px;
@@ -12519,29 +12518,49 @@ ul li a .icon{
   text-align: center;
   border-radius: 50%;
 }
-ul li a .icon span{
+ul li a .icon span {
   line-height: 40px;
   font-size: 20px;
 }
-ul li a i{
+ul li a i {
   position: absolute;
   right: 10px;
   font-size: 25px;
   pointer-events: none;
 }
 .wrapper ul.setting-drop,
-.wrapper ul.help-drop{
+.wrapper ul.help-drop {
   display: none;
   position: absolute;
   top: 70px;
   z-index: 999;
 }
-.wrapper .arrow{
+.wrapper .arrow {
   padding-left: 10px;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
 }
-.wrapper .arrow span{
+.wrapper .arrow span {
   margin-right: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  padding: 0 0.5rem !important;
+}
+
+.form-group {
+  position: relative;
+}
+
+#icon,
+#icon2 {
+  position: absolute !important;
+  top: 30%;
+  right: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
